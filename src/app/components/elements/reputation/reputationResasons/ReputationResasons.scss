@@ -1,0 +1,21 @@
+.reputation-reasons {
+  margin: 0 28px;
+    padding: 16px;
+    padding-bottom: 30px;
+    border: 1.02443px solid #e0e3eb;
+    border-radius: 2.92693px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .reputation-reasons-icon {
+      margin-bottom: 15px;
+    }
+    .reputation-reasons-title {
+      margin-bottom: 13px;
+    }
+    p {
+      text-align: left;
+      max-width: 186px;
+      font-size: 12px;
+    }
+  }
