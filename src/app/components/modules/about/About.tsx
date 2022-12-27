@@ -2,8 +2,9 @@ import React from "react";
 
 import aboutImg from "public/images/aboutImg.svg";
 import "./About.scss";
+import ButtonHis from '../../elements/about/ButtonHis';
 
-const About = (): React.ReactElement => {
+const About:React.FC = (): React.ReactElement => {
   return (
     <div className="about">
       <img src={aboutImg} alt="" className="about-img" />
@@ -17,7 +18,7 @@ const About = (): React.ReactElement => {
           We’ve matured into an industry leader and trusted resource for those
           seeking quality, innovation and reliability when building in the U.S.
         </div>
-        <button>More on Our History</button>
+        <ButtonHis />
       </div>
     </div>
   );

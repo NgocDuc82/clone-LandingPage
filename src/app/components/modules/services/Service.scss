@@ -1,7 +1,9 @@
 .service-wrap {
   background: #f6f8f7;
+  padding: 20px 0;
   .service-title {
     padding-top: 32px;
+    text-align: center;
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 25px;
@@ -12,6 +14,7 @@
       display: flex;
       flex-wrap: wrap;
       .service-item {
+        text-align: center;
         margin: 0 24px;
         padding: 40px 18px;
         background: #fff;
@@ -27,6 +30,15 @@
         .service-item-name {
           margin-top: 14px;
         }
+      }
+      .highlight {
+        text-align: center;
+        margin: 0 24px;
+        padding: 40px 18px;
+        background: #2947a9;
+        color: #fff;
+        width: 26.5%;
+        margin-bottom: 35px;
       }
     }
   }

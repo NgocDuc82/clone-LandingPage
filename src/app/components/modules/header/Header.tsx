@@ -1,15 +1,13 @@
 import React from "react";
 
-import './Header.scss'
-import logo from "public/images/logo.svg";
+import "./Header.scss";
+import Logo from 'app/components/elements/common/logo/Logo';
 
-const Header = ():React.ReactElement => {
+
+const Header = (): React.ReactElement => {
   return (
     <div className="header">
-      <div className="header-logo">
-        <img className="logo" alt="" src={logo} />
-        <p className="header-nameCompany">TheBox</p>
-      </div>
+      <Logo />
       <div className="header-navbar">
         <ul className="navbar-list">
           <li className="navbar-item">Home</li>

@@ -1,6 +1,6 @@
 
 export type ReputationType = {
     img : string ;
-    titles : string;
+    title : string;
     decs : string;
 }

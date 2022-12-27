@@ -17,26 +17,32 @@ import ListService from './listService/ListService';
 const Services = (): React.ReactElement => {
   const services: ServicesType[] = [
     {
+      id: 1,
       icon: construction,
       name: "Construction",
     },
     {
+      id: 2,
       icon: renovation,
       name: "Renovation",
     },
     {
+      id: 3,
       icon: consultation,
       name: "Consultation",
     },
     {
+      id: 4,
       icon: repairServices,
       name: "Repair Services",
     },
     {
+      id: 5,
       icon: architecture,
       name: "Architecture",
     },
     {
+      id: 6,
       icon: electric,
       name: "Electric",
     },
@@ -48,7 +54,7 @@ const Services = (): React.ReactElement => {
         <ul className="service-list">
             {
                 services?.map((data) => {
-                    return  <ListService {...data} />
+                    return  <ListService key={data.id} {...data}   />;
                 })
             }
         </ul>

@@ -10,7 +10,7 @@ const ReputationResasons:React.FC<ReputationType> = (data):React.ReactElement =>
         <img alt="" src={data.img} />
       </div>
       <div className="reputation-reasons-title">
-        <h4>{data.titles}</h4>
+        <h4>{data.title}</h4>
       </div>
       <div className="reputation-reasons-desc">
         <p>{data.decs}</p>
