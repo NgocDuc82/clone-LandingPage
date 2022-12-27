@@ -1,6 +1,7 @@
 import React from "react";
-import './ButtonHis.scss'
+import 'app/components/elements/about/ButtonHis.scss'
 
-export default function ButtonHis():React.ReactElement {
+const ButtonHis:React.FC = ():React.ReactElement => {
   return <button className="btnHis">More on Our History</button>;
 }
+export default ButtonHis

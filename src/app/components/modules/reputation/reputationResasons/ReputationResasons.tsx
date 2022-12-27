@@ -1,7 +1,7 @@
 import React from "react";
 
-import './ReputationResasons.scss';
-import { ReputationType } from 'app/types/ReputationType';
+import 'app/components/modules/reputation/reputationResasons/ReputationResasons.scss';
+import { ReputationType } from 'app/components/modules/reputation/ReputationType';
 
 const ReputationResasons:React.FC<ReputationType> = (data):React.ReactElement => {
   return (

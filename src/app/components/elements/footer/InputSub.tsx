@@ -1,6 +1,6 @@
 import React from "react";
 
-import './inputSub.scss'
+import 'app/components/elements/footer/inputSub.scss'
 
 export default function InputSub():React.ReactElement {
   return (

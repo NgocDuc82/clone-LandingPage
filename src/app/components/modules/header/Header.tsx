@@ -1,10 +1,10 @@
 import React from "react";
 
-import "./Header.scss";
+import "app/components/modules/header/Header.scss";
 import Logo from 'app/components/elements/common/logo/Logo';
 
 
-const Header = (): React.ReactElement => {
+const Header:React.FC = (): React.ReactElement => {
   return (
     <div className="header">
       <Logo />

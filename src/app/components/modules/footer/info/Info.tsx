@@ -1,9 +1,9 @@
 import React from "react";
-import Logo from "../../../elements/common/logo/Logo";
+import Logo from "app/components/elements/common/logo/Logo";
 
-import './Info.scss';
+import "app/components/modules/footer/info/Info.scss";
 
-export default function Info(): React.ReactElement {
+const Info: React.FC = (): React.ReactElement => {
   return (
     <div className="info">
       <div className=" info-item address">
@@ -19,4 +19,6 @@ export default function Info(): React.ReactElement {
       <Logo />
     </div>
   );
-}
+};
+
+export default Info;

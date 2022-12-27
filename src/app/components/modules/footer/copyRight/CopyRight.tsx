@@ -1,8 +1,8 @@
 import React from "react";
 
-import './CopyRight.scss'
+import 'app/components/modules/footer/copyRight/CopyRight.scss'
 
-const CopyRight = (): React.ReactElement => {
+const CopyRight:React.FC = (): React.ReactElement => {
   return (
     <div className="CopyRight">
       <p className="content">TheBox Company © 2022. All Rights Reserved</p>

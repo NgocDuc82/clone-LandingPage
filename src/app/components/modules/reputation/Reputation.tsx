@@ -1,11 +1,11 @@
 import React from "react";
 
-import "./Reputation.scss";
-import { ReputationType } from "app/types/ReputationType";
-import ReputationResasons from "./reputationResasons/ReputationResasons";
+import "app/components/modules/reputation/Reputation.scss";
+import { ReputationType } from "app/components/modules/reputation/ReputationType";
+import ReputationResasons from "app/components/modules/reputation/reputationResasons/ReputationResasons";
 import ReputationIcon from "public/images/ReputationIcon.svg";
 
-const  Reputation = (): React.ReactElement =>  {
+const  Reputation:React.FC = (): React.ReactElement =>  {
   const mockReputations: ReputationType[] = [
     {
       img: ReputationIcon,
