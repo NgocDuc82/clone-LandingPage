@@ -1,5 +1,5 @@
 import React from "react";
-import { ServicesType } from "../../../../types/Services";
+import { ServicesType } from "app/types/Services";
 
 const ListService:React.FC<ServicesType> = (data):React.ReactElement => {
   return (

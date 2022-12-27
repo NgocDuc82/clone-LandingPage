@@ -1,14 +1,14 @@
 import React from "react";
 
 import "./Service.scss";
-import { ServicesType } from "../../../types/Services";
+import { ServicesType } from "app/types/Services";
 
-import architecture from "../../../../public/images/Service-item-architecture.svg";
-import construction from "../../../../public/images/Service-item-construction.svg";
-import consultation from "../../../../public/images/Service-item-consultation.svg";
-import electric from "../../../../public/images/Service-item-electric.svg";
-import renovation from "../../../../public/images/Service-item-renovation.svg";
-import repairServices from "../../../../public/images/Service-item-repairServices.svg";
+import architecture from "public/images/Service-item-architecture.svg";
+import construction from "public/images/Service-item-construction.svg";
+import consultation from "public/images/Service-item-consultation.svg";
+import electric from "public/images/Service-item-electric.svg";
+import renovation from "public/images/Service-item-renovation.svg";
+import repairServices from "public/images/Service-item-repairServices.svg";
 import ListService from './listService/ListService';
 
 

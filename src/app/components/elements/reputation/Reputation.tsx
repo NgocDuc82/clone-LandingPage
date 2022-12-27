@@ -1,9 +1,9 @@
 import React from "react";
 
 import "./Reputation.scss";
-import { ReputationType } from "../../../types/ReputationType";
+import { ReputationType } from "app/types/ReputationType";
 import ReputationResasons from "./reputationResasons/ReputationResasons";
-import ReputationIcon from "../../../../public/images/ReputationIcon.svg";
+import ReputationIcon from "public/images/ReputationIcon.svg";
 
 const  Reputation = (): React.ReactElement =>  {
   const mockReputations: ReputationType[] = [

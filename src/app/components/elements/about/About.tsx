@@ -1,6 +1,6 @@
 import React from "react";
 
-import aboutImg from "../../../../public/images/aboutImg.svg";
+import aboutImg from "public/images/aboutImg.svg";
 import "./About.scss";
 
 const About = (): React.ReactElement => {
