@@ -1,11 +1,33 @@
 import React from "react";
 
 import "app/styles/modules/Reputation.scss";
-import ReputationResasons from "app/components/modules/reputation/reputationResasons/ReputationResasons";
 import ReputationIcon from "public/images/ReputationIcon.svg";
-import { ReputationType } from './ReputationType';
 
-const  Reputation = (): React.ReactElement =>  {
+export type ReputationType = {
+  img: string;
+  title: string;
+  decs: string;
+};
+
+const Reputation = (): React.ReactElement => {
+  const ReputationResasons: React.FC<ReputationType> = (
+    data
+  ): React.ReactElement => {
+    return (
+      <div className="reputation-reasons">
+        <div className="reputation-reasons-icon">
+          <img alt="" src={data.img} />
+        </div>
+        <div className="reputation-reasons-title">
+          <h4>{data.title}</h4>
+        </div>
+        <div className="reputation-reasons-desc">
+          <p>{data.decs}</p>
+        </div>
+      </div>
+    );
+  };
+
   const mockReputations: ReputationType[] = [
     {
       img: ReputationIcon,
@@ -29,12 +51,12 @@ const  Reputation = (): React.ReactElement =>  {
         <h2>Our Reputation</h2>
       </div>
       <div className="reasons-wrapper">
-        {mockReputations?.map((data,index): React.ReactElement => {
+        {mockReputations?.map((data, index): React.ReactElement => {
           return <ReputationResasons key={index} {...data} />;
         })}
       </div>
     </div>
   );
-}
+};
 
-export default Reputation
+export default Reputation;

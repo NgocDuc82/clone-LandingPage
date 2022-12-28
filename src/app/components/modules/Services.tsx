@@ -8,13 +8,28 @@ import consultation from "public/images/Service-item-consultation.svg";
 import electric from "public/images/Service-item-electric.svg";
 import renovation from "public/images/Service-item-renovation.svg";
 import repairServices from "public/images/Service-item-repairServices.svg";
-import ListService from 'app/components/modules/services/listService/ListService';
-import { ServicesType } from 'app/components/modules/services/ServicesType';
 
-
-
+export type ServicesType = {
+  id: number;
+  icon: string;
+  name: string;
+};
 
 const Services = (): React.ReactElement => {
+  const ListService: React.FC<ServicesType> = (data): React.ReactElement => {
+    return (
+      <li
+        className={
+          data.id % 2 === 0 ? "service-item highlight" : "service-item"
+        }
+      >
+        <div className="service-item-icon">
+          <img alt="" src={data.icon} />
+        </div>
+        <div className="service-item-name">{data.name}</div>
+      </li>
+    );
+  };
   const services: ServicesType[] = [
     {
       id: 1,
@@ -52,11 +67,9 @@ const Services = (): React.ReactElement => {
       <div className="service-title">Services</div>
       <div className="services-content">
         <ul className="service-list">
-            {
-                services?.map((data) => {
-                    return  <ListService key={data.id} {...data}   />;
-                })
-            }
+          {services?.map((data) => {
+            return <ListService key={data.id} {...data} />;
+          })}
         </ul>
       </div>
     </div>

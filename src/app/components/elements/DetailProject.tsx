@@ -1,7 +1,7 @@
 import React from "react";
-import { ProjectType } from "app/components/modules/projects/listProject/ListProject";
 
 import "app/styles/elements/DetailProject.scss";
+import { ProjectType } from 'app/components/modules/Projects';
 
 const DetailProject: React.FC<ProjectType> = (project): React.ReactElement => {
   return (
