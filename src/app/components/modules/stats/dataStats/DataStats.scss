@@ -1,0 +1,9 @@
+.data-stats{
+    position: relative;
+    height: 500px;
+    .stats-item{
+        position: absolute;
+        top: 20%;
+        right: 10%;
+    }
+}
