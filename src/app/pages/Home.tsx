@@ -8,10 +8,11 @@ import About from 'app/components/modules/about/About';
 import Services from 'app/components/modules/services/Services';
 import Footer from 'app/components/modules/footer/Footer';
 import Ads from 'app/components/modules/ads/Ads';
+import Stats from 'app/components/modules/stats/Stats';
+import Projects from 'app/components/modules/projects/Projects';
+import Contact from 'app/components/modules/contact/Contact';
 
 import 'app/styles/responsive.scss'
-// import Stats from '../components/modules/stats/Stats';
-
 const Home:React.FC = ():React.ReactElement =>  {
   return (
     <>
@@ -20,8 +21,10 @@ const Home:React.FC = ():React.ReactElement =>  {
       <Reputation />
       <About />
       <Services />
-      {/* <Stats /> */}
+      <Stats />
       <Ads />
+      <Projects />
+      <Contact />
       <Footer />
     </>
   )

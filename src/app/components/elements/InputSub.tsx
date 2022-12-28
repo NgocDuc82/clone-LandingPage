@@ -1,8 +1,8 @@
 import React from "react";
 
-import 'app/components/elements/footer/inputSub.scss'
+import 'app/styles/elements/inputSub.scss'
 
-export default function InputSub():React.ReactElement {
+const  InputSub:React.FC = ():React.ReactElement =>  {
   return (
     <div className="inputSub">
       <input className="input-mail" placeholder="Your email here" />
@@ -10,3 +10,4 @@ export default function InputSub():React.ReactElement {
     </div>
   );
 }
+export default InputSub

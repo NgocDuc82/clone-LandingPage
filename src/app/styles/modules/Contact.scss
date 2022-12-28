@@ -1,0 +1,25 @@
+.contact {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background: #f6f8f7;
+  .contact-title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 42px;
+    color: #292e3d;
+    margin-bottom: 16px;
+  }
+  .contact-decs {
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .contact-form{
+    .btn-Submit{
+        padding: 10 40px;
+    }
+  }
+}

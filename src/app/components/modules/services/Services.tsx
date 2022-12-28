@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Service.scss";
+import "app/styles/modules/Service.scss";
 
 import architecture from "public/images/Service-item-architecture.svg";
 import construction from "public/images/Service-item-construction.svg";

@@ -1,6 +1,6 @@
 import React from "react";
 
-import "app/components/modules/reputation/Reputation.scss";
+import "app/styles/modules/Reputation.scss";
 import ReputationResasons from "app/components/modules/reputation/reputationResasons/ReputationResasons";
 import ReputationIcon from "public/images/ReputationIcon.svg";
 import { ReputationType } from './ReputationType';

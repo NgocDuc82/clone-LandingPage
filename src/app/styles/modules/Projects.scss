@@ -1,0 +1,64 @@
+.project {
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 82px;
+  .ListProject-show {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: 60px;
+  }
+  .ListProject-page {
+    margin-right: 12px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    .ListProject-radio {
+      margin: 0 28px;
+      .radio-item {
+        margin: 8px;
+      }
+    }
+    .buttonBack,
+    .buttonNext {
+      background-color: #000;
+      color: #fff;
+      padding: 15px 57px;
+      font-size: 14px;
+      span {
+        padding: 0 12px;
+      }
+      &:hover {
+        cursor: pointer;
+        opacity: 0.9;
+      }
+    }
+  }
+  .projectNavbar {
+    .projectNavbar-title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 42px;
+      color: #292e3d;
+      margin-bottom: 24px;
+    }
+    .menu-item {
+      padding-left: 10px;
+      margin-top: 14px;
+      font-weight: 500;
+      font-size: 18px;
+      color: #c2c7d6;
+      &:hover {
+        border-left: 6px solid #2947a9;
+        color: #2947a9;
+        font-weight: 700;
+        cursor: pointer ;
+      }
+    }
+    .first-item {
+      border-left: 6px solid #2947a9;
+      color: #2947a9;
+      font-weight: 700;
+    }
+  }
+}

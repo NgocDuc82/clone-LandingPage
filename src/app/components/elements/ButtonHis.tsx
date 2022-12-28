@@ -1,5 +1,5 @@
 import React from "react";
-import 'app/components/elements/about/ButtonHis.scss'
+import 'app/styles/elements/ButtonHis.scss'
 
 const ButtonHis:React.FC = ():React.ReactElement => {
   return <button className="btnHis">More on Our History</button>;

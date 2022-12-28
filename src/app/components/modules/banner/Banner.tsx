@@ -1,6 +1,6 @@
 import React from "react";
 import banner from "public/images/Hero.svg"
-import 'app/components/modules/banner/Banner.scss'
+import 'app/styles/modules/Banner.scss'
 const Banner: React.FC = (): React.ReactElement => {
   return (
     <div>

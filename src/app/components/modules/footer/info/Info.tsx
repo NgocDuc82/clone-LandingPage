@@ -1,7 +1,5 @@
 import React from "react";
-import Logo from "app/components/elements/common/logo/Logo";
-
-import "app/components/modules/footer/info/Info.scss";
+import Logo from "app/components/elements/Logo";
 
 const Info: React.FC = (): React.ReactElement => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 
-import "app/components/modules/ads/Ads.scss";
+import "app/styles/modules/Ads.scss";
 
 import bgAds from "public/images/bg-ads.svg";
 

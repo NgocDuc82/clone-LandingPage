@@ -1,7 +1,5 @@
 import React from "react";
 
-import 'app/components/modules/footer/copyRight/CopyRight.scss'
-
 const CopyRight:React.FC = (): React.ReactElement => {
   return (
     <div className="CopyRight">

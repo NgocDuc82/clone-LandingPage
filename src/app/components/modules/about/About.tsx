@@ -1,8 +1,8 @@
 import React from "react";
 
 import aboutImg from "public/images/aboutImg.svg";
-import "app/components/modules/about/About.scss";
-import ButtonHis from 'app/components/elements/about/ButtonHis';
+import "app/styles/modules/About.scss";
+import ButtonHis from 'app/components/elements/ButtonHis';
 
 const About:React.FC = (): React.ReactElement => {
   return (
