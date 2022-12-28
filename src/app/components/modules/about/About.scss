@@ -1,0 +1,30 @@
+.about {
+  text-align: left;
+  position: relative;
+  margin-bottom: 90px;
+  img {
+    margin-left: 63px;
+    margin-top: 54px;
+  }
+  .about-desc {
+    position: absolute;
+    max-width: 360px;
+    top: 19%;
+    right: 10%;
+    background: #2947a9;
+    color: #fff;
+    padding: 36px 43px 44px 29px;
+    .about-desc-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 26px;
+    }
+    .about-desc-content {
+      font-size: 12px;
+      line-height: 1.5em;
+      margin-bottom: 44px;
+      max-width: 240px;
+    }
+   
+  }
+}
