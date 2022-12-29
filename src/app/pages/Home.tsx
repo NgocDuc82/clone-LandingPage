@@ -19,6 +19,12 @@ import { services, projects } from "app/const/mock";
 import Button from "app/components/elements/Button";
 
 const Home: React.FC = (): React.ReactElement => {
+
+  const HandleHistory = () => {
+    console.log('aaa');
+    
+  }
+
   return (
     <>
       <Header />
@@ -40,7 +46,7 @@ const Home: React.FC = (): React.ReactElement => {
             seeking quality, innovation and reliability when building in the
             U.S.
           </div>
-          <Button item={{ title: "Our Your History" }} />
+          <Button {...{ title: "Our Your History" , onClick: HandleHistory}} />
         </div>
       </div>
       <Services services={services} />

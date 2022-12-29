@@ -1,12 +1,11 @@
 import React from "react";
 import "app/styles/modules/projects.scss";
 
-
 import { Radio } from "antd";
 import type { RadioChangeEvent } from "antd";
-import Button from 'app/components/elements/Button';
-
-
+import Button from "app/components/elements/Button";
+import { ArrowLeftOutlined } from "@ant-design/icons";
+import { ArrowRightOutlined } from "@ant-design/icons";
 
 export type DetailProjectType = {
   img: string;
@@ -25,6 +24,12 @@ const Projects: React.FC<ProjectProps> = ({ projects }): React.ReactElement => {
     setValueRadio(e.target.value);
   };
 
+  const HandleBack = () => {
+    console.log("aaa");
+    
+  };
+  const HandleNext = () => {};
+
   return (
     <div className="project">
       <div className="projectNavbar">
@@ -38,9 +43,9 @@ const Projects: React.FC<ProjectProps> = ({ projects }): React.ReactElement => {
       </div>
       <div className="ListProject">
         <div className="ListProject-show">
-          {projects?.map((projects) => {
+          {projects?.map((projects, index) => {
             return (
-              <div className="detail">
+              <div className="detail" key={index}>
                 <div className="img">
                   <img alt="" src={projects.img} />
                 </div>
@@ -53,7 +58,10 @@ const Projects: React.FC<ProjectProps> = ({ projects }): React.ReactElement => {
           })}
         </div>
         <div className="ListProject-page">
-          <Button  item = {{title: 'Back'}} />
+          <Button onClick={HandleBack}>
+            <ArrowLeftOutlined />
+            Back
+          </Button>
           <Radio.Group
             className="ListProject-radio"
             onChange={onChangeRadio}
@@ -65,7 +73,10 @@ const Projects: React.FC<ProjectProps> = ({ projects }): React.ReactElement => {
             <Radio className="radio-item" value={4}></Radio>
             <Radio className="radio-item" value={5}></Radio>
           </Radio.Group>
-          <Button item = {{title: 'Next'}} />
+          <Button onClick={HandleNext}>
+            Next
+            <ArrowRightOutlined />
+          </Button>
         </div>
       </div>
     </div>
