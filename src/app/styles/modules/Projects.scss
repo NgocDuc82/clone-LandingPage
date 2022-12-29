@@ -7,6 +7,32 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     margin-top: 60px;
+    .detail {
+      margin: 12px;
+      .img {
+        line-height: 0;
+        img {
+          display: block;
+          vertical-align: middle;
+        }
+      }
+
+      .detail-info {
+        clear: none;
+        padding: 8px;
+        background: #2947a9;
+        color: #fff;
+        .detail-name {
+          font-size: 14px;
+          font-weight: 700;
+        }
+        .detail-address {
+          margin-top: 8px;
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
+    }
   }
   .ListProject-page {
     margin-right: 12px;
@@ -19,8 +45,7 @@
         margin: 8px;
       }
     }
-    .buttonBack,
-    .buttonNext {
+    button {
       background-color: #000;
       color: #fff;
       padding: 15px 57px;
@@ -52,7 +77,7 @@
         border-left: 6px solid #2947a9;
         color: #2947a9;
         font-weight: 700;
-        cursor: pointer ;
+        cursor: pointer;
       }
     }
     .first-item {

@@ -14,16 +14,35 @@
       }
       .mail {
         margin-bottom: 30px;
+        input {
+          background: #ffffff;
+          border: 0.731732px solid #e0e3eb;
+          border-radius: 2.92693px;
+          padding: 6px;
+        }
+        button {
+          background: #f9995d;
+          border-radius: 2.92693px;
+          color: #fff;
+          font-size: bold;
+          border: none;
+          padding: 6px;
+          margin-left: 6px;
+          &:hover {
+            cursor: pointer;
+            opacity: 0.9;
+          }
+        }
       }
-      .socail {
-        .socail-title {
+      .Social {
+        .Social-title {
           font-size: 14px;
           font-weight: bold;
           color: #2947a9;
         }
-        .socail-list {
+        .Social-list {
           display: flex;
-          .socail-item {
+          .Social-item {
             margin-right: 16px;
             margin-top: 16px;
           }

@@ -1,6 +1,4 @@
 import React from "react";
-
-import "app/styles/modules/Header.scss";
 import Logo from 'app/components/elements/Logo';
 
 

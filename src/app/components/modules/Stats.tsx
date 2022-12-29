@@ -1,5 +1,5 @@
 import React from "react";
-import "app/styles/modules/Stats.scss";
+import "app/styles/modules/stats.scss";
 
 import stats1 from "public/images/stats-1.svg";
 import stats2 from "public/images/stats-2.svg";
@@ -7,8 +7,8 @@ import stats3 from "public/images/stats-3.svg";
 import stats4 from "public/images/stats-4.svg";
 
 const Stats: React.FC = (): React.ReactElement => {
-  const DataStats: React.FC = (): React.ReactElement => {
-    return (
+  return (
+    <div className="Stats">
       <div className="data-stats">
         <div className="stats-list">
           <div className="stats-item item-1">
@@ -41,10 +41,6 @@ const Stats: React.FC = (): React.ReactElement => {
           </div>
         </div>
       </div>
-    );
-  };
-  const DescStats: React.FC = (): React.ReactElement => {
-    return (
       <div className="descStats">
         <div className="desc-title">30 Years Experience</div>
         <div className="desc-content">
@@ -53,13 +49,6 @@ const Stats: React.FC = (): React.ReactElement => {
         </div>
         <button className="desc-btn">Contact Us</button>
       </div>
-    );
-  };
-
-  return (
-    <div className="Stats">
-      <DataStats />
-      <DescStats />
     </div>
   );
 };

@@ -1,9 +1,9 @@
 import React from "react";
 import logo from "public/images/logo.svg";
 
-import 'app/styles/elements/Logo.scss'
+import 'app/styles/elements/logo.scss'
 
-export default function Logo() {
+const Logo:React.FC = ():React.ReactElement => {
   return (
     <div className="logo">
       <img className="logo" alt="" src={logo} />
@@ -11,3 +11,4 @@ export default function Logo() {
     </div>
   );
 }
+export default Logo
