@@ -5,52 +5,53 @@ import stats1 from "public/images/stats-1.svg";
 import stats2 from "public/images/stats-2.svg";
 import stats3 from "public/images/stats-3.svg";
 import stats4 from "public/images/stats-4.svg";
-import Button from 'app/components/elements/Button';
+import Button from "app/components/elements/Button";
 
 const Stats: React.FC = (): React.ReactElement => {
-
-  const HandleContactUs = () => {}
+  const HandleContactUs = () => {};
   return (
-    <div className="Stats">
-      <div className="data-stats">
-        <div className="stats-list">
-          <div className="stats-item item-1">
-            <div className="item-number">84</div>
-            <div className="item-icon">
-              <img alt="icon" src={stats1} />
+    <div className="stats">
+      <div className="wapper-stats">
+        <div className="data-stats">
+          <div className="stats-list">
+            <div className="stats-item item-1">
+              <div className="item-number">84</div>
+              <div className="item-icon">
+                <img alt="icon" src={stats1} />
+              </div>
+              <div className="item-content">Happy Clients</div>
             </div>
-            <div className="item-content">Happy Clients</div>
-          </div>
-          <div className="stats-item item-2">
-            <div className="item-number">123</div>
-            <div className="item-icon">
-              <img alt="icon" src={stats3} />
+            <div className="stats-item item-2">
+              <div className="item-number">123</div>
+              <div className="item-icon">
+                <img alt="icon" src={stats3} />
+              </div>
+              <div className="item-content">Projects Completed</div>
             </div>
-            <div className="item-content">Projects Completed</div>
-          </div>
-          <div className="stats-item item-3">
-            <div className="item-number">37</div>
-            <div className="item-icon">
-              <img alt="icon" src={stats2} />
+            <div className="stats-item item-3">
+              <div className="item-number">37</div>
+              <div className="item-icon">
+                <img alt="icon" src={stats2} />
+              </div>
+              <div className="item-content">Awards Win</div>
             </div>
-            <div className="item-content">Awards Win</div>
-          </div>
-          <div className="stats-item item-4">
-            <div className="item-number">30</div>
-            <div className="item-icon">
-              <img alt="icon" src={stats4} />
+            <div className="stats-item item-4">
+              <div className="item-number">30</div>
+              <div className="item-icon">
+                <img alt="icon" src={stats4} />
+              </div>
+              <div className="item-content">Years in Business</div>
             </div>
-            <div className="item-content">Years in Business</div>
           </div>
         </div>
       </div>
-      <div className="descStats">
+      <div className="desc-stats">
         <div className="desc-title">30 Years Experience</div>
         <div className="desc-content">
           Our company has been the leading provided construction services to
           clients throughout the USA since 1988.
         </div>
-        <Button  onClick={HandleContactUs}>Contact Us</Button>
+        <Button onClick={HandleContactUs}>Contact Us</Button>
       </div>
     </div>
   );

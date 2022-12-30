@@ -35,7 +35,7 @@ const Home: React.FC = (): React.ReactElement => {
         <img className="banner-img" alt="" src={banner} />
       </div>
       <Reputation reputations={reputations} />
-      <div className="about">
+      <div className="about" id="About Us">
         <img src={aboutImg} alt="" className="about-img" />
         <div className="about-desc">
           <div className="about-desc-title">About us</div>
