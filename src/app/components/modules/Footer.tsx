@@ -7,17 +7,12 @@ import Input from "app/components/elements/Input";
 import twitter from "public/images/twitter.svg";
 import facebook from "public/images/facebook.svg";
 import insta from "public/images/In.svg";
-import Button from 'app/components/elements/Button';
+import Button from "app/components/elements/Button";
 
 const socialNetwork = [twitter, insta, facebook];
 
-
-
 const Footer: React.FC = (): React.ReactElement => {
-
-  const HandleSubscribe = () => {
-
-  }
+  const HandleSubscribe = () => {};
   return (
     <div className="footer">
       <div className="footer-top">
@@ -39,15 +34,17 @@ const Footer: React.FC = (): React.ReactElement => {
             <p>NEWSLETTER:</p>
           </div>
           <div className="mail">
-            <Input item={{placeholder: 'Your email here'}}  />
-            <Button {...{ title : 'Subscribe' , onClick: HandleSubscribe}} />
+            <Input item={{ placeholder: "Your email here" }} />
+            <Button onClick={HandleSubscribe}>
+              Subcrible
+            </Button>
           </div>
-          <div className="socail">
-            <p className="socail-title">SOCAIL:</p>
-            <ul className="socail-list">
-              {socialNetwork?.map((social,index) => {
+          <div className="social">
+            <p className="social-title">social:</p>
+            <ul className="social-list">
+              {socialNetwork?.map((social, index) => {
                 return (
-                  <li className="socail-item" key={index}>
+                  <li className="social-item" key={index}>
                     <img alt="" src={social} />
                   </li>
                 );

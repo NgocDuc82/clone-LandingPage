@@ -5,8 +5,11 @@ import stats1 from "public/images/stats-1.svg";
 import stats2 from "public/images/stats-2.svg";
 import stats3 from "public/images/stats-3.svg";
 import stats4 from "public/images/stats-4.svg";
+import Button from 'app/components/elements/Button';
 
 const Stats: React.FC = (): React.ReactElement => {
+
+  const HandleContactUs = () => {}
   return (
     <div className="Stats">
       <div className="data-stats">
@@ -47,7 +50,7 @@ const Stats: React.FC = (): React.ReactElement => {
           Our company has been the leading provided construction services to
           clients throughout the USA since 1988.
         </div>
-        <button className="desc-btn">Contact Us</button>
+        <Button  onClick={HandleContactUs}>Contact Us</Button>
       </div>
     </div>
   );

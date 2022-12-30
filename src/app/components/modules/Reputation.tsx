@@ -1,7 +1,6 @@
 import React from "react";
 
 import "app/styles/modules/reputation.scss";
-import { reputations } from "app/const/mock";
 
 export type ReputationType = {
   img: string;

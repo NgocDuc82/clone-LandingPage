@@ -44,7 +44,7 @@ const Contact: React.FC = (): React.ReactElement => {
         <Row>
           <Col span={13} push={6}>
             <Form.Item>
-              <Button type="primary" htmlType="submit">
+              <Button className="btn-submit" type="primary" htmlType="submit">
                 Submit
               </Button>
             </Form.Item>

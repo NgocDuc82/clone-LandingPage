@@ -13,6 +13,9 @@ import banner from "public/images/Hero.svg";
 import aboutImg from "public/images/aboutImg.svg";
 
 import "app/styles/modules/home.scss";
+import "app/styles/responsive.scss";
+
+
 import bgAds from "public/images/bg-ads.svg";
 import { reputations } from "app/const/mock";
 import { services, projects } from "app/const/mock";
@@ -46,13 +49,15 @@ const Home: React.FC = (): React.ReactElement => {
             seeking quality, innovation and reliability when building in the
             U.S.
           </div>
-          <Button {...{ title: "Our Your History" , onClick: HandleHistory}} />
+          <Button onClick={HandleHistory}>
+            Out Your History
+          </Button>
         </div>
       </div>
       <Services services={services} />
       <Stats />
       <div className="ads">
-        <img alt="" src={bgAds} />
+        <img className="ads-img" alt="" src={bgAds} />
         <div className="ads-content">
           <div className="title">
             <h1>Free consultation with exceptional quality</h1>

@@ -1,7 +1,6 @@
 import React from "react";
 
 import "app/styles/modules/service.scss";
-import { services } from "app/const/mock";
 
 export type ServicesType = {
   id: number;

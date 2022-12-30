@@ -66,6 +66,9 @@
 }
 .ads {
   position: relative;
+  .ads-img {
+    width: 100%;
+  }
   .ads-content {
     position: absolute;
     top: 30%;

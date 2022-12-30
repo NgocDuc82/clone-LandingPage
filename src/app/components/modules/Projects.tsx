@@ -24,11 +24,20 @@ const Projects: React.FC<ProjectProps> = ({ projects }): React.ReactElement => {
     setValueRadio(e.target.value);
   };
 
-  const HandleBack = () => {
-    console.log("aaa");
-    
+  const HandleBack = (): void => {
+    if (valueRadio === 1) {
+      setValueRadio(5);
+    } else {
+      setValueRadio(valueRadio - 1);
+    }
   };
-  const HandleNext = () => {};
+  const HandleNext = (): void => {
+    if (valueRadio === 5) {
+      setValueRadio(1);
+    } else {
+      setValueRadio(valueRadio + 1);
+    }
+  };
 
   return (
     <div className="project">
