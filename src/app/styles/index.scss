@@ -9,6 +9,16 @@ body {
   margin: auto;
   li {
     list-style-type: none;
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+  }
+  button {
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
   }
 }
 
